@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontEndController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ConsultationController;
+use App\Models\Consultation;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +22,5 @@ Route::get('about', [FrontEndController::class, 'about'])->name('about');
 Route::get('services', [FrontEndController::class, 'services'])->name('services');
 Route::get('blog', [FrontEndController::class, 'blog'])->name('blog');
 Route::get('contact', [FrontEndController::class, 'contact'])->name('contact');
+Route::post('contact', [ContactController::class, 'saveContactMessage'])->name('post-contact');
+Route::post('/', [ConsultationController::class, 'consultations'])->name('post-consultations');

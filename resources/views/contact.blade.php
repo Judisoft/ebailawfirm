@@ -5,17 +5,32 @@
         <!-- ================ contact section start ================= -->
         <section class="contact-section">
             <div class="container">
+                @if(session('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <span class="fa fa-check-circle text-success"></span> {!! session('success') !!}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                @endif
+
+                @if(session('error'))
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <span class="fa fa-times-circle text-danger"></span> {!! session('error') !!}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                @endif
                 <div class="d-none d-sm-block mb-5 pb-4 bg-about">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5394.644322349458!2d9.193116635680644!3d4.022939406404226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106135de6b85901f%3A0xdfbf24e7d2162598!2sEbai%20Law%20Firm!5e0!3m2!1sen!2scm!4v1650247822904!5m2!1sen!2scm" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="contact-title">Get in Touch</h2>
+                        <h1 class="contact-title" style="font-size: 36px">Get in Touch</h1>
+                        <p style="font-weight:500;font-size:20px;">Fill the form to leave us a message</p>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <form class="form-contact contact_form" action="{{ route('post-contact') }}" method="post" id="contactForm" novalidate="novalidate">
+                        @csrf
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-12 mb-3">
                                     <div class="form-group">
                                         <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
                                     </div>

@@ -43,10 +43,10 @@
                             </div>
                             <div class="header-info-right">
                                 <ul class="header-social">    
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href="https://www.twitter.com/ebailawfirm"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/ebailawfirm"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/ebailawfirm"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li> <a href="https://www.instagram.com/ebailawfirm"><i class="fab fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                                             <li><a href="{{route('home')}}">Home</a></li>
                                             <li><a href="{{route('about')}}">About</a></li>
                                             <li><a href="{{route('services')}}">Services</a></li>
-                                            <li><a href="{{route('blog')}}">Blog</a></li>
+                                            <li><a href="#">Blog</a></li>
                                             <li><a href="{{route('contact')}}">Contact Us</a></li>
                                         </ul>
                                     </nav>
@@ -128,10 +128,10 @@
                             <div class="footer-tittle">
                                 <h4>Open hour</h4>
                                 <ul>
-                                    <li><a href="#">Monday 11am-7pm</a></li>
-                                    <li><a href="#"> Tuesday-Friday 11am-8pm</a></li>
+                                    <li><a href="#">Monday 8am-6pm</a></li>
+                                    <li><a href="#"> Tuesday-Friday 8am-8pm</a></li>
                                     <li><a href="#"> Saturday 10am-6pm</a></li>
-                                    <li><a href="#"> Sunday 11am-6pm</a></li>
+                                    <li><a href="#"> Sunday CLOSED</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -217,7 +217,10 @@
     <script src="{{asset('js/jquery.validate.min.js')}}"></script>
     <script src="{{asset('js/mail-script.js')}}"></script>
     <script src="{{asset('js/jquery.ajaxchimp.min.js')}}"></script>
-    
+
+    <!-- consultation -->
+    <script src="{{asset('js/consultation.js')}}"></script>
+
     <!-- Jquery Plugins, main Jquery -->	
     <script src="{{asset('js/plugins.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>

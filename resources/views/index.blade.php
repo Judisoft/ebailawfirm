@@ -2,6 +2,19 @@
 
 @section('content')
     <main>
+     @if(session('success'))
+        <div class="alert home-bg alert-dismissible fade show rounded-0 mb-0" role="alert">
+            <span class="fa fa-check-circle text-success"></span><span class="text-white"> {!! session('success') !!}</span> 
+            <button type="button" class="close text-white" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+    @endif
+
+    @if(session('error'))
+        <div class="alert home-bg alert-dismissible fade show rounded-0 mb-0" role="alert">
+            <span class="fa fa-times-circle text-danger"></span><span class="text-white"> {!! session('error') !!}</span> 
+            <button type="button" class="close text-white" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+    @endif
     <!--? slider Area Start-->
     <div class="slider-area">
         <div class="slider-active">
@@ -16,19 +29,20 @@
                         </div>
                         <div class="col-xl-5 col-md-5 col-lg-5">
                             <div class="mt-2">
-                                <form>
+                                <form action="{{ route('post-consultations') }}" method="post" id="consultationForm" novalidate="novalidate">
+                                    @csrf
                                     <div class="card card-body p-3" style="opacity:0.8; min-height: 200px;background-color: #2c234d;border-top:7px solid #ff5f13;">
                                         <h1 class="text-center text-white">We have 25+ years of experience.</h1>
                                         <h3 class="text-center text-white">Register now and get a <span class="theme-color">free consultation</span></h3>
                                         <div class="flex-column">
                                         <div class="p-1">
-                                                <input type="text" class="form-control" placeholder="Enter Name" id="name" onmouseover="changeBorder()">
+                                                <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
                                             </div>
                                             <div class="p-1">
-                                                <input type="text" class="form-control" placeholder="Email" id="email" onmouseover="changeBorder()">
+                                                <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">                                            
                                             </div>
                                             <div class="p-1 align-content-center">
-                                                <input type="submit" value="Register" class="btn header-btn cta-btn p-3">
+                                                <input type="submit" value="Get Free Consultation" class="btn header-btn cta-btn p-3">
                                             </div>
                                         </div>
                                     </div>
@@ -179,7 +193,7 @@
                              familiarity with our clients’ industries. We have been able to leverage this industry experience with our mastery of 
                              the bijural legal system to develop effective hybrid solutions to give comfort to our vast array of domestic and foreign clients. 
                              Our success rate in achieving our clients’ legal and business objectives is central to the value proposition at EBAI LAW FIRM</p>
-                        <a href="about.html" class="btn header-btn">More About Us</a>
+                        <a href="{{ route('about') }}" class="btn header-btn">More About Us</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -418,6 +432,42 @@
         readLess3.style.display = 'none'
     }
 
+</script>
+<script>
+  @if(Session::has('message'))
+  toastr.options =
+  {
+  	"closeButton" : true,
+  	"progressBar" : true
+  }
+  		toastr.success("{{ session('message') }}");
+  @endif
 
+  @if(Session::has('error'))
+  toastr.options =
+  {
+  	"closeButton" : true,
+  	"progressBar" : true
+  }
+  		toastr.error("{{ session('error') }}");
+  @endif
+
+  @if(Session::has('info'))
+  toastr.options =
+  {
+  	"closeButton" : true,
+  	"progressBar" : true
+  }
+  		toastr.info("{{ session('info') }}");
+  @endif
+
+  @if(Session::has('warning'))
+  toastr.options =
+  {
+  	"closeButton" : true,
+  	"progressBar" : true
+  }
+  		toastr.warning("{{ session('warning') }}");
+  @endif
 </script>
 @endsection

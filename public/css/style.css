@@ -23,6 +23,9 @@
 .testimonial-bg {
     background: #f9fafc;
 }
+.home-bg{
+    background-color: #212529;
+}
 .white-color {
     color: #fff;
 }
@@ -529,6 +532,18 @@ hr {
     box-shadow: 0 0 10px #719ECE;
   }
 @media (max-width: 575px) {
+    #scrollUp,
+    #back-top {
+        right: 16px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #scrollUp,
+    #back-top {
+        right: 16px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
     #scrollUp,
     #back-top {
         right: 16px;
@@ -2290,22 +2305,22 @@ hr {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .slider-height {
-        min-height: 700px;
+        min-height: 550px;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .slider-height {
-        min-height: 500px;
+        min-height: 600px;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .slider-height {
-        min-height: 500px;
+        min-height: 600px;
     }
 }
 @media (max-width: 575px) {
     .slider-height {
-        min-height: 500px;
+        min-height: 600px;
     }
 }
 .slider-height2 {
@@ -4552,7 +4567,7 @@ hr {
     display: block;
 }
 .contact-section {
-    padding: 130px 0 100px;
+    padding: 10px 0 100px;
 }
 @media (max-width: 991px) {
     .contact-section {
