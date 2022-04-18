@@ -15,6 +15,7 @@ class FrontEndController extends Controller
     }
 
     public function services() {
+
         return view('services.index');
     }
 

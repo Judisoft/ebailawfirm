@@ -3,34 +3,32 @@
 @section('content')
     <main>
     <!--? slider Area Start-->
-    <div class="slider-area ">
+    <div class="slider-area">
         <div class="slider-active">
             <!-- Single Slider -->
             <div class="single-slider slider-height d-flex align-items-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-8 col-lg-8">
+                        <div class="col-xl-7 col-lg-7">
                             <div class="hero__caption mt-2">
                                 <h1> Advocates of the supreme Court of <br> Nigeria and Cameroon</h1>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-md-4 col-lg-4">
+                        <div class="col-xl-5 col-md-5 col-lg-5">
                             <div class="mt-2">
                                 <form>
-                                    <div class="card card-body p-3" style="opacity:0.8; min-height: 200px;">
-                                        <h2 class="text-center">Talk to a Lawyer, It's Free!</h2>
+                                    <div class="card card-body p-3" style="opacity:0.8; min-height: 200px;background-color: #2c234d;border-top:7px solid #ff5f13;">
+                                        <h1 class="text-center text-white">We have 25+ years of experience.</h1>
+                                        <h3 class="text-center text-white">Register now and get a <span class="theme-color">free consultation</span></h3>
                                         <div class="flex-column">
                                         <div class="p-1">
-                                                <input type="text" class="form-control" placeholder="Name" id="name" onmouseover="changeBorder()">
+                                                <input type="text" class="form-control" placeholder="Enter Name" id="name" onmouseover="changeBorder()">
                                             </div>
                                             <div class="p-1">
                                                 <input type="text" class="form-control" placeholder="Email" id="email" onmouseover="changeBorder()">
                                             </div>
-                                            <div class="p-1">
-                                                <input type="text" class="form-control" placeholder="Telephone" id="telephone" onmouseover="changeBorder()">
-                                            </div>
                                             <div class="p-1 align-content-center">
-                                                <input type="submit" class="btn header-btn cta-btn p-3">
+                                                <input type="submit" value="Register" class="btn header-btn cta-btn p-3">
                                             </div>
                                         </div>
                                     </div>
@@ -100,38 +98,63 @@
             <div class="row p-2">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-cat text-center mb-50">
-                        <div class="cat-icon">
-                            <span class="flaticon-shipped"></span>
-                        </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Land Transport</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                            <h5><a href="services.html">General Litigation</a></h5><br>
+                            <p id="generalLitigation">EBAI Law Firm is concerned with the welfare of our clients, subsequently, our goal is to achieve solutions, solve problems and provide practical pieces of advice to clients with cases either civil or criminal.
+                                The firm prides itself on being the leading firm handling cases both criminal and civil proficiently.
+                                Already existing clients can attest to the fact that all briefs brought to the firm are treated with the expertise and skill they deserve.
+                                Wondering whether your matter is civil or criminal in nature? Leave that to us and be completely assured that the brief would be analyzed expertly and executed with the necessary acumen by our veteran lawyers.
+                            </p>
+                            <button type="button" class="btn header-btn" id="readMore1" onclick="showAllOne()">Read More</a>
+                            <button type="button" class="btn header-btn" id="readLess1" style="display: none;" onclick="showLessOne()">Show Less</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-cat text-center mb-50">
-                        <div class="cat-icon">
-                            <span class="flaticon-ship"></span>
-                        </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Ship Transport</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                            <h5><a href="services.html">Corporate and Finance Law</a></h5>
+                             <p id="corporateLaw">At EBAI Law Firm, our lawyers are highly experienced in property 
+                                and real estate law matters spanning Advisory, Advocacy, Transactional,
+                                Managerial, and Regulatory services.
+                                With over decades of experience, our lawyers are ready to provide the premium legal 
+                                service you need in your property and real estate matters, including but not limited to:
+                                Investigation of title to land.
+                                Preparation and review of land documents.
+                                Dispute Resolution in land matters.
+                                Acquisition and sale of properties.
+                                Commercial property transaction.
+                                Property development.
+                                Leasehold and tenancy agreement.
+                                Perfection and Registration of Title.
+                                Estate management.
+                                Recovery of Premises.
+                                Mortgages.
+                            </p>
+                            <button type="button" class="btn header-btn" id="readMore2" onclick="showAllTwo()">Read More</a>
+                            <button type="button" class="btn header-btn" id="readLess2" style="display: none;" onclick="showLessTwo()">Show Less</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-cat text-center mb-50">
-                        <div class="cat-icon">
-                            <span class="flaticon-plane"></span>
-                        </div>
+                    <div class="single-cat text-center mb-">
                         <div class="cat-cap">
-                            <h5><a href="services.html">Air Transport</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                            <h5><a href="services.html">Legal Advisory</a></h5><br>
+                            <p id="legalAdvisory">At EBAI Law Firm, our extensive knowledge of both local and international regulations give us an added advantage to help clients around the world deal effectively and legally with regulatory and compliance issues.
+                                Regulatory frameworks are constantly evolving, businesses are getting globalized and cross-border transactions are becoming more complex, thus necessitating the need for highly qualified professionals.
+                                At EBAI Law Firm, one of our objectives is to create sophisticated and efficient strategies that safeguard our clients’ assets and reputation and enable them to concentrate on pursuing their businesses with confidence.
+                                We commit our global resources to help our clients meet regulatory requirements and keep their businesses running smoothly, whether they are based at home or abroad.
+                                We provide legal services to individuals and corporate clients who require counselling regarding complex government laws, rules, regulations, procedure, permits, applications or enforcement matters.
+                            </p>
+                            <button type="button" class="btn header-btn" id="readMore3" onclick="showAllThree()">Read More</a>
+                            <button type="button" class="btn header-btn" id="readLess3" style="display: none;" onclick="showLessThree()">Show Less</a>
                         </div>
                     </div>
                 </div>
-                <a href="{{ route('services') }}" class="btn header-btn">Explore All Services</a>
+                <div class="p-3 text-center mr-auto">
+                    <a href="{{ route('services') }}" class="btn header-btn">Explore All Services</a>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -145,7 +168,7 @@
                         <!-- Section Tittle -->
                         <div class="section-tittle mb-50">
                             <span>About Our Law Firm</span>
-                            <h2>We help you grow</h2>
+                            <h2>Who we are and what we do</h2>
                         </div>
                         <p>Our motivation is outright : to facilitate the successful realization of business activity and projects on the ground by assisting 
                             clients in minimizing risks linked with doing business in Africa, Cameroon and Nigeria in particular.We have developed a granular understanding 
@@ -189,7 +212,7 @@
                         <div class="team-img">
                             <img src="{{asset('img/gallery/ida.jpg')}}" class="rounded" alt="Iva Ida Bessem Ebai">
                             <div class="team-caption">
-                                <h4><a href="#">IVA IDA BESSEM EBAI, LLB, MA & BL</a></h4>
+                                <h4><a href="#">IVA IDA BESSEM EBAI</a></h4>
                                 <p>Senior Partner</p>
                                 <p>Head of Firm</p>
                                 <!-- Blog Social -->
@@ -210,7 +233,7 @@
                         <div class="team-img">
                             <img src="{{asset('img/gallery/baiyeh.jpg')}}" class="rounded" alt="Baiye Mbi Etchu">
                             <div class="team-caption">
-                                <h4><a href="#">BAIYE MBI ETCHU, LLB, BL</a></h4>
+                                <h4><a href="#">BAIYE MBI ETCHU</a></h4>
                                 <p>Partner</p>
                                 <p>Barrister at Law</p>
                                 <!-- Blog Social -->
@@ -231,7 +254,7 @@
                         <div class="team-img">
                             <img src="{{asset('img/gallery/julian.jpg')}}" class="rounded" alt="Julian Tabi Ebai">
                             <div class="team-caption">
-                                <h4><a href="#">JULIAN TABI EBAI, BSc Econs/Acc, LLB, LLM</a></h4>
+                                <h4><a href="#">JULIAN TABI EBAI</a></h4>
                                 <p>Associate</p>
                                 <p>Barrister at Law</p>
                                 <!-- Blog Social -->
@@ -248,7 +271,7 @@
                     </div>
                 </div>
             </div>
-            <a href="{{ route('services') }}" class="btn header-btn">View all Partners and Associates</a>
+            <a href="#" class="btn header-btn">View all Partners and Associates</a>
         </div>
     </div>
     <!-- Team Ara End -->
@@ -262,14 +285,14 @@
                         <span>Our Clients</span>
                         <h1>SONARA Cameroon</h1>
                     </div> 
-                    <div class="h1-testimonial-active">
+                    <div class="h1-testimonial">
                         <div class="single-testimonial ">
                             <!-- Client Content -->
                             <div class="testimonial-caption ">
                                 <div class="testimonial-top-cap">
                                     <div class="d-flex flex-row">
                                         <div class="p-2">
-                                            <img src="{{asset('img/gallery/sonara-logo.png')}}" height="80" width="80" alt="Logo of Greenhouse Ventures">
+                                            <a href="https://sonara-cm.cm/" target="_blank"><img src="{{asset('img/gallery/sonara-logo.png')}}" height="80" width="80" alt="Logo of Greenhouse Ventures"></a>
                                         </div>
                                         <div class="p-2">
                                             <p class="text-dark">Created in 1973 and inaugurated in 1981, SONARA is a topping reforming refinery. SONARA places at the disposal 
@@ -291,7 +314,8 @@
                                 <div class="testimonial-top-cap">
                                     <div class="d-flex flex-row">
                                         <div class="p-2">
-                                            <img src="{{asset('img/gallery/greenhouse-logo.png')}}" height="100" width="100" alt="Logo of Greenhouse Ventures">                                        </div>
+                                            <a href="https://greenhouseventures.cm/" target="_blank"><img src="{{asset('img/gallery/greenhouse-logo.png')}}" height="100" width="100" alt="Logo of Greenhouse Ventures"></a>
+                                        </div>
                                         <div class="p-2">
                                             <p class="text-dark">GreenHouse Ventures was founded in 2014 with a common goal to increase quality and quantity of food – 
                                                 ensuring production and profit with the use of the low cost climate smart greenhouse technology. 
@@ -303,14 +327,13 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="{{ route('services') }}" class="btn header-btn">View all our Clients</a>
                     </div>
                 </div>
                 <!-- Form Start -->
                 <div class="col-xl-4 col-lg-5 col-md-8">
                     <div class="testimonial-form text-center mt-5">
                         <h3>How can we help you?</h3>
-                        <a class="call-btn" href="tel:237674526116"><img src="{{ asset('img/adapt_icon/call.png') }}" height="35" width="35">Call Us Now</a>
+                        <a class="call-btn" href="tel:237674526116"><img src="{{ asset('img/adapt_icon/call.png') }}" height="42" width="42">Click to Call Us Now</a>
                     </div>
                 </div>
                 <!-- Form End -->
@@ -319,7 +342,7 @@
     </div>
     <!-- Clients End -->
 </main>
-<script>
+{{-- <script>
     const name= document.getElementById("name")
     const email = document.getElementById("email")
     const telephone = document.getElementById("telephone")
@@ -327,6 +350,74 @@
  function changeBorder(name) {
     name.style.border = '2px solid #ff5f13'
  }
+
+</script> --}}
+<script>
+   const generalLit = document.getElementById("generalLitigation").innerHTML
+   const corporateLaw = document.getElementById("corporateLaw").innerHTML
+   const legalAdvisory = document.getElementById("legalAdvisory").innerHTML
+   const readMore1 = document.getElementById("readMore1")
+   const readMore2 = document.getElementById("readMore2")
+   const readMore3 = document.getElementById("readMore3")
+
+   function truncateString(str, num) {
+       if (str.len <= num) {
+           return str
+       }
+       return str.slice(0, num) + ' ' + '...'
+   }
+   document.getElementById('generalLitigation').innerHTML = truncateString(generalLit, 500)
+   document.getElementById("corporateLaw").innerHTML = truncateString(corporateLaw, 480)
+   document.getElementById("legalAdvisory").innerHTML = truncateString(legalAdvisory, 470)
+
+   // function showAll(btnEvent) {
+  //      btnEvent.addEvenListener('click', showDetails(e) {
+    //         console.log(showAll(readMore1))
+  //      })
+  //  } 
+    function showAllOne(){
+        serviceId = document.getElementById("generalLitigation")
+        btnId = document.getElementById("readLess1")
+        serviceId.innerHTML = generalLit
+        readMore1.style.display = 'none'
+        btnId.style.display = 'inline'
+    }
+
+    function showLessOne() {
+        document.getElementById("generalLitigation").innerHTML = truncateString(generalLit, 500)
+        readMore1.style.display = 'inline'
+        readLess1.style.display = 'none'
+    }
+
+    function showAllTwo(){
+        serviceId = document.getElementById("corporateLaw")
+        btnId = document.getElementById("readLess2")
+        serviceId.innerHTML = corporateLaw
+        readMore2.style.display = 'none'
+        btnId.style.display = 'inline'
+    }
+
+    function showLessTwo() {
+        document.getElementById("corporateLaw").innerHTML = truncateString(corporateLaw, 480)
+        readMore2.style.display = 'inline'
+        readLess2.style.display = 'none'
+    }
+
+    function showAllThree(){
+        serviceId = document.getElementById("legalAdvisory")
+        btnId = document.getElementById("readLess3")
+        serviceId.innerHTML = legalAdvisory
+        readMore3.style.display = 'none'
+        btnId.style.display = 'inline'
+    
+    }
+
+    function showLessThree() {
+        document.getElementById("legalAdvisory").innerHTML = truncateString(legalAdvisory, 470)
+        readMore3.style.display = 'block'
+        readLess3.style.display = 'none'
+    }
+
 
 </script>
 @endsection

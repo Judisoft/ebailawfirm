@@ -383,12 +383,14 @@ hr {
     text-transform: none;
 }
 .call-btn{
-    border: 3px solid #2196F3;
+    border: 5px solid #2196F3;
     padding: 5px 20px 10px 0;
-    color: var(--primary);
+    color: #2196F3;
     border-radius:65px;
     text-align: justify;
-    
+}
+.call-btn:hover{
+    color: #2196F3 !important;
 }
 .submit-btn {
     width: 100%;
@@ -490,7 +492,7 @@ hr {
     height: 50px;
     width: 50px;
     right: 31px;
-    bottom: 18px;
+    bottom: 100px;
     position: fixed;
     z-index: 10;
     color: #fff;
@@ -502,10 +504,10 @@ hr {
     box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
 }
 #chat  img{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     right: 31px;
-    bottom: 100px;
+    bottom: 18px;
     position: fixed;
 }
 
@@ -514,11 +516,12 @@ hr {
     height: 50px;
     padding: 5px;
 }
+
 .cta .form-control {
     height: 65px;
 }
-.cta:hover::before{
-    background-color: var(--success);
+.cta:hover:hover{
+    background: var(--success);
 }
 .cta .input:focus {
     outline: none !important;
@@ -2634,9 +2637,9 @@ hr {
     }
 }
 .categories-area .single-cat {
-    border: 1px solid #e1ebf7;
+    border: 2px solid #e1ebf7;
     border-radius: 6px;
-    padding: 85px 22px;
+    padding: 50px 22px;
     -webkit-transition: all 0.4s ease-out 0s;
     -moz-transition: all 0.4s ease-out 0s;
     -ms-transition: all 0.4s ease-out 0s;
@@ -2645,12 +2648,13 @@ hr {
     position: relative;
     z-index: 1;
 }
-@media (max-width: 575px) {
-    .categories-area .single-cat {
-        padding: 50px 22px;
-    }
+ .single-cat-services {
+    border: 1px solid #e1ebf7;
+    height: 150px;
+    border-radius: 6px;
+    padding: 50px 22px;
 }
-.categories-area .single-cat::before {
+.single-cat-services::before{
     position: absolute;
     content: "";
     width: 100%;
@@ -2661,6 +2665,46 @@ hr {
     left: 0;
     z-index: -1;
     border-radius: 6px;
+}
+.single-cat::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background: #ff5f13;
+    transition: 0.6s;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 6px;
+}
+
+@media (max-width: 575px) {
+    .categories-area .single-cat {
+        padding: 50px 22px;
+    }
+}
+.single-cat-services::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background: #ff5f13;
+    transition: 0.6s;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 6px;
+}
+.single-cat-services:hover{
+    background: #ff5f13;
+}
+.single-cat-services a:hover{
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.6s;
+
 }
 .categories-area .single-cat .cat-icon span {
     color: #f15f22;
