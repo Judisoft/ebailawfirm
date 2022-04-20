@@ -65,6 +65,13 @@
                             </div>
                         </div>
                         <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="ti-email"></i></span>
+                            <div class="media-body">
+                                <h3>P.O Box 268 Limbe</h3>
+                                <p>SW Region, Cameroon</p>
+                            </div>
+                        </div>
+                        <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
                                 <h3> (+237) 674-526-116</h3>

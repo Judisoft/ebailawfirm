@@ -38,7 +38,7 @@
                             <div class="header-info-left">
                                 <ul>     
                                     <li>Phone: + (237) 233-332-343&nbsp;&nbsp; 674-526-116 &nbsp;&nbsp; 675-935-265 </li>
-                                    <li>Email: info@domainname.com</li>
+                                    <li>Email: info@ebailawfirm.cm</li>
                                 </ul>
                             </div>
                             <div class="header-info-right">
@@ -57,13 +57,13 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <!-- Logo -->
-                        <div class="col-xl-2 col-lg-2">
+                        <div class="col-xl-3 col-lg-3">
                             <div class="logo">
                                 {{-- <a href="{{route('home')}}"><img src="{{asset('img/logo/logo.png')}}" class="rounded-circle" style="max-height: 50px; max-width: 50px;" /></a> --}}
-                                <a href="{{ route('home') }}" style="font-weight:800;font-size:28px;color:#ff5f13;">EbaiLawFirm</a>
+                                <a href="{{ route('home') }}" style="font-weight:800;font-size:28px;color:#ff5f13;"><img src="{{asset('img/logo/logo.png')}}" style="max-height: 40px; max-width: 40px;" /> EbaiLawFirm</a>
                             </div>
                         </div>
-                        <div class="col-xl-10 col-lg-10">
+                        <div class="col-xl-9 col-lg-9">
                             <div class="menu-wrapper  d-flex align-items-center justify-content-end">
                                 <!-- Main-menu -->
                                 <div class="main-menu d-none d-lg-block">
@@ -76,13 +76,6 @@
                                             <li><a href="{{route('contact')}}">Contact Us</a></li>
                                         </ul>
                                     </nav>
-                                </div>
-                                <!-- Header-btn -->
-                                <div class="header-right-btn d-none d-lg-block ml-20">
-                                    <a  class="btn-btn-outline-secondary" href="#">Register </a>
-                                </div>
-                                <div class="header-right-btn d-none d-lg-block ml-20">
-                                    <a  class="btn login-btn" href="#">Login</a>
                                 </div>
                             </div>
                         </div> 
@@ -153,7 +146,7 @@
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle mb-25">
                                 <h4 class="info1">Follow us on Social Media</h4>
-                                 <a href="{{ route('home') }}" style="font-weight:800;font-size:28px;color:#ff5f13;">EbaiLawFirm</a>
+                                 <a href="{{ route('home') }}" style="font-weight:800;font-size:28px;color:#ff5f13;"><img src="{{asset('img/logo/logo.png')}}" style="max-height: 40px; max-width: 40px;" /> EbaiLawFirm</a>
                             </div>
                             <!-- Footer Social -->
                             <div class="footer-social ">

@@ -183,59 +183,21 @@
     <div class="testimonial-area p-3 bg-about mt-50">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-xl-7 col-lg-7">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle mt-50">
-                        <span>Our Clients</span>
-                        <h1>SONARA Cameroon</h1>
-                    </div> 
-                    <div class="h1-testimonial-active">
-                        <div class="single-testimonial ">
-                            <!-- Client Content -->
-                            <div class="testimonial-caption ">
-                                <div class="testimonial-top-cap">
-                                    <div class="d-flex flex-row">
-                                        <div class="p-2">
-                                            <a href="https://sonara-cm.cm/" target="_blank"><img src="{{asset('img/gallery/sonara-logo.png')}}" height="80" width="80" alt="Logo of Greenhouse Ventures"></a>
-                                        </div>
-                                        <div class="p-2">
-                                            <p class="text-dark">Created in 1973 and inaugurated in 1981, SONARA is a topping reforming refinery. SONARA places at the disposal 
-                                                of the market the following petroleum products: butane, gasoline, jet fuel, 
-                                                kerosene, fuel oil, distillate, fuel oil. 
-                                                <a class="text-primary" href="https://sonara-cm.cm/" target="_blank">continue reading ...</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-xl-8 col-lg-8">
+                <h1 style="color:#f15f22;">Our Household Clients</h1>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row p-2">
+                            <div class="p-2 ml-3"><img src="{{asset('img/gallery/sonara-logo.png')}}" height="70" width="70" alt="Logo of Greenhouse Ventures"></div>
+                            <div class="p-2 mt-3"><h1>SONARA Cameroon</h1></div>
                         </div>
-                        <div class="section-tittle mt-50">
-                            <h1>GREENHOUSE VENTURES Cameroon</h1>
-                        </div> 
-                        <div class="single-testimonial">
-                            <!-- Client Content -->
-                            <div class="testimonial-caption">
-                                <div class="testimonial-top-cap">
-                                    <div class="d-flex flex-row">
-                                        <div class="p-2">
-                                            <a href="https://greenhouseventures.cm/" target="_blank"><img src="{{asset('img/gallery/greenhouse-logo.png')}}" height="100" width="100" alt="Logo of Greenhouse Ventures"></a>
-                                        </div>
-                                        <div class="p-2">
-                                            <p class="text-dark">GreenHouse Ventures was founded in 2014 with a common goal to increase quality and quantity of food – 
-                                                ensuring production and profit with the use of the low cost climate smart greenhouse technology. 
-                                                Our idea of farming was to ensure we rebrand agriculture and make it very attractive for others.
-                                                <a class="text-primary" href="https://greenhouseventures.cm/about-us/#about" target="_blank">continue reading ...</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="d-flex flex-row p-2">
+                            <div class="p-2"><img src="{{asset('img/gallery/greenhouse-logo.png')}}" height="110" width="110" alt="Logo of Greenhouse Ventures"></div>
+                            <div class="mt-5"><h1>GREENHOUSE VENTURES Cameroon</h1></div>
                         </div>
-                        <a href="{{ route('services') }}" class="btn header-btn">View all our Clients</a>
                     </div>
                 </div>
                 <!-- Form Start -->
-                <div class="col-xl-4 col-lg-5 col-md-8">
+                <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="testimonial-form text-center mt-5">
                         <h3>How can we help you?</h3>
                         <a class="call-btn" href="tel:237674526116"><img src="{{ asset('img/adapt_icon/call.png') }}" height="42" width="42">Click to Call Us Now</a>
